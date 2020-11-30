@@ -53,6 +53,10 @@ export class AuthService {
       );
   }
 
+  getHereMapsApiKey(): Observable<any> {
+    return this.http.get<any>('/api/here-maps-api-key');
+  }
+
   setUser(user: User | null): void {
     if (user) {
       user.isAdmin = user.roles.includes('admin');

@@ -1,6 +1,9 @@
-<here-map _apikey="insert-valid-api-key-here"
-          lat="46.770439"
-          lng="23.591423"
-          width="100%"
-          height="400px">
-</here-map>
+<ng-container *ngIf="hereMapsApiKey">
+  <here-map [_apikey]="hereMapsApiKey"
+            lat="46.770439"
+            lng="23.591423"
+            width="100%"
+            height="400px">
+  </here-map>
+</ng-container>
+

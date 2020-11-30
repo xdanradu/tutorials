@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '@app/shared/services';
 
 declare var H: any;
 
@@ -9,9 +10,15 @@ declare var H: any;
 })
 export class HomeComponent implements OnInit {
 
-  public constructor() {
+  hereMapsApiKey = '';
+
+  public constructor( private authService: AuthService) {
   }
 
-  public ngOnInit() { }
+  public ngOnInit() {
+    this.authService.getHereMapsApiKey().subscribe(response => {
+      this.hereMapsApiKey = response.key;
+    });
+  }
 
 }
