@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HereMapComponent } from './here-map.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {RouterTestingModule} from '@angular/router/testing';
+import {HttpClientModule} from '@angular/common/http';
+import {AuthService} from '@app/shared/services';
 
 describe('HereMapComponent', () => {
   let component: HereMapComponent;
@@ -8,7 +12,9 @@ describe('HereMapComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HereMapComponent ]
+      declarations: [ HereMapComponent ],
+      imports: [ BrowserAnimationsModule, RouterTestingModule, HttpClientModule ],
+      providers: [ AuthService ]
     })
     .compileComponents();
   }));
