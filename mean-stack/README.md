@@ -30,9 +30,9 @@ cp .env.example .env
 docker-compose up -d
 ```
 
-u: xdanradu@yahoo.com
-p: admin
+http://localhost:9002
 http://localhost:4040/
+http://localhost:4040/api-docs/
 
 https://github.com/linnovate/mean
 git clone https://github.com/linnovate/mean
