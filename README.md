@@ -12,9 +12,8 @@
 
 - https://developer.mozilla.org/en-US/docs/Web/Tutorials
 - https://www.w3schools.com/
-- youtube
-- stackoverflow
-- github
+- https://github.com/flyforfun98/online-shop
+- https://github.com/ro-msg-angular-training/resources
 
 ## Design
 
@@ -27,3 +26,4 @@
 ## Check the web tehnologies behind these websites with
 
 https://www.wappalyzer.com
+
