@@ -29,3 +29,7 @@
 ## Check the web tehnologies behind websites with
 
 https://www.wappalyzer.com
+
+## Git tutorial
+
+https://www.youtube.com/watch?v=SWYqp7iY_Tc
